@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <h1 class="header"href="index.html" target="_blank">Harry's Website</h1>
+    <a class="button" href="Subpages/Interests.html" target="_blank">My Interests</a>
+    <a class="button" href="Subpages/School.html" target="_blank">My School</a>
+    <a class="button" href="https://www.youtube.com/haliflame" target="_blank">My YouTube Channel</a>
+    <a class="button" href="index.html">Home</a>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <br><br><br>
+<div class="w3-content w3-display-container" style="max-width:100%">
+    
+            <div class="mySlides">
+                      <a href ="https://www.youtube.com/user/HaliFlame3" target="_blank"><img src="FrontpagePics/line-of-fire-header.jpg" width="100%" height="400px" ></a>
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white">
+              My YouTube Channel
+                </div>
+        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-white">
+                Click arrows below to scroll
+                </div>
+          </div>
+   
+        <div class="mySlides ">
+              <a href = "Subpages/School.html" target="_blank"><img src="FrontpagePics/School%20website.jpg" width="100%" height="400px" ></a>
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white">
+                My School
+                </div>
+        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-white">
+                Click For More Information
+                </div>
+          </div>
+    
+            <div class="mySlides">
+                      <a href = "Subpages/Interests.html" target='_blank'><img src="FrontpagePics/Research%20header.jpg" width="100%" height="400px"></a>
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-white">
+                What I Achieved
+                </div>
+        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-white">
+                Click To See
+                </div>
+          </div>
+ 
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+  </div>
+  </div>
+
+    
+    
+    <center>
+        <font color="red"><h1><font size="7">About This Website</font></h1></font>
+        <h3>This website was created to show people what I have acheived in the past and what I can potentially create in the future. Basically, <font color="orange"><h2>The Story Of My Life<font color="black">...so far
+        <h3><p>The slideshow above splits my website into three sections: <font color="green">My YouTube, My School, My Interests.<font color="black">
+        <h3><p>Click on the correlating image to see more information about that topic. You can also click on the arrows on the bottom of the slideshow to scroll between the sections.</p></h3>
+    </center>
+   
+</body>
+    
+    <script>
+    
+
+    
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 5 seconds
+    currentDiv(myIndex)
+}
+    
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</html>
