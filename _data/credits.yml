@@ -51,8 +51,8 @@ creds:
     url : http://html5up.net/spectral
     lic : ccb3
   - for : Mods for a Jekyll blog
-    by  : arkadianriver
-    url : http://arkadianriver.com
+    by  : vidhyav656
+    url : https://github.com/vidhyav656
     lic : mit
   - for : Icons
     by  : Dave Gandy
@@ -111,8 +111,4 @@ image-credit:
     by  : froderik
     url : https://www.flickr.com/photos/froderik/9355090806/
     lic : ccbsa2
-  - src : /images/banner.jpg
-    by  : Konstaninos Dafallas
-    url : https://www.flickr.com/photos/72906133@N00/4011647045/
-    lic : ccb2
 
