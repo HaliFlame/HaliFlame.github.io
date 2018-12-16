@@ -40,9 +40,9 @@ extra-inspiration:
   - name : The "Idea" Person
     url  : http://give-em-a-shout-out.com
 extra-image-credit:
-  - src : /path/to/images/nicepic.png
+  - src : https://cdn.pixabay.com/photo/2016/04/30/14/29/flame-1363003__340.jpg
     by  : Artist
-    url : http://artistsite.com
+    url : http://pixabay.com
     lic : license-code # see credits.yml
 
 # If you want to make a statement about other images not credited, such as your
