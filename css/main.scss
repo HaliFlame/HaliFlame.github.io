@@ -2341,6 +2341,65 @@ $baseurl: '{{ site.baseurl }}/images';
      }
   }
 
+.jumbotron {
+	padding: 30px 15px;
+	margin-bottom: 30px;
+	color: inherit;
+	background-color: #fafafa;	
+	.h1 {
+		color: inherit;
+		text-align: center;
+	}
+	p {
+		margin-bottom: 15px;
+		font-size: 21px;
+		font-weight: 200;
+		text-align: center;
+	}
+	span{
+		color:#ed4933;
+	}
+	>hr {
+		border-top-color: #d5d5d5;
+	}
+	.container {
+		max-width: 100%;
+	}
+
+.container {
+	.jumbotron {
+		border-radius: 6px;
+	}
+}
+.container-fluid {
+	.jumbotron {
+		border-radius: 6px;
+	}
+}
+}
+
+@media screen and (min-width: 768px) {
+.jumbotron {
+	padding: 48px 0;	
+	.h1 {
+		font-size: 33px;
+	}
+}
+.container {
+	.jumbotron {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+}
+.container-fluid {
+	.jumbotron {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+}
+}
+
+
 {% if site.custom_extensions == 'yes' %}
 {% include _my/custom.scss %}
 {% endif %}
