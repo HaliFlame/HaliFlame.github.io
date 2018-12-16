@@ -27,7 +27,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', 'AW-955201572');
+gtag('config', '{{site.data.tokens.google-analytics}}');
 </script>
 {% endif %}
 {% if site.data.tokens.google_ad_client && jekyll.environment == "production" %}
