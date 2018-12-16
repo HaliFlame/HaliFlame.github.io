@@ -26,10 +26,10 @@ script: |
       <div class="12u$">
         <textarea required name="textbody" id="textbody" placeholder="Type your message" rows="6"></textarea>
       </div>
-      <div class="6u$ 12u$(xsmall)">
+      <!-- <div class="6u$ 12u$(xsmall)">
         <img src="{{ site.data.tokens.captchascript }}"/><br />
         <input required type="text" name="captcha" id="captcha" placeholder="Type the numbers you see" />
-      </div>
+      </div> -->
       <div class="12u$">
         <ul class="actions">
           <li><input type="submit" value="Send Message" class="special" /></li>
@@ -42,3 +42,9 @@ script: |
            value="{{ '/contact-failure' | prepend: site.baseurl | prepend: site.url }}" />
   </form>
 </section>
+
+<div class="jumbotron">
+    <h1 class="h1">Join the<span> Flamer Squad</span> right now!</h1>
+    <p> The hottest squad on the internet...</p>
+    <p><a class="special" href="#">Have a request?</a></p>
+</div>
