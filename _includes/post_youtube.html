@@ -1,4 +1,3 @@
-<div class='embed-container'>
-  <iframe src='https://www.youtube.com/embed/{{ include.id }}'
-  frameborder='0' allowfullscreen></iframe>
-</div>
+{% for include in page.id %}
+    <div class="4u"> <iframe src='https://www.youtube.com/embed/{{ include }}'></iframe></div>
+{% endfor %}
