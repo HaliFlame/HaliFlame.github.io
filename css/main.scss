@@ -2493,6 +2493,55 @@ $border_color_1: #ccc;
 
 ////contact page icons end/////
 
+
+////about page start////
+.about-section {
+	.row{
+		 display: -webkit-flex; 
+		 sdisplay: -ms-flexbox; 
+		 display: flex; 
+		 overflow: hidden;
+	}
+	.row-height{
+		 flex: 1;
+	}
+    $color_1: #000;
+    $background_color_1: #fff;
+
+    .align-center {
+        text-align: center;
+        background-color: $background_color_1;
+        color: $color_1;
+        padding: 70px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        h4 {
+            padding: 10px;
+            -webkit-box-shadow: 1px 2px 2px 4px rgba(204, 204, 204, 1);
+            -moz-box-shadow: 1px 2px 2px 4px rgba(204, 204, 204, 1);
+            box-shadow: 1px 2px 2px 4px rgba(204, 204, 204, 1);
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        &:hover {
+            -webkit-box-shadow: 1px 2px 2px 4px rgba(204, 204, 204, 1);
+            -moz-box-shadow: 1px 2px 2px 4px rgba(204, 204, 204, 1);
+            box-shadow: 1px 2px 2px 4px rgba(204, 204, 204, 1);
+        }
+
+        .fa {
+            color: #ED502E;
+        }
+    }
+}
+
+////about page end////
+
 {% if site.custom_extensions == 'yes' %}
 {% include _my/custom.scss %}
 {% endif %}
