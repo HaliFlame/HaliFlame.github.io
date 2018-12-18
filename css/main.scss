@@ -2438,6 +2438,60 @@ $baseurl: '{{ site.baseurl }}/images';
 }
 }
 
+///contact page icons start////// 
+
+$color_1: #090909;
+$color_2: #ED502E;
+$color_3: #fff;
+$background_color_1: #f9f9f9;
+$background_color_2: #fff;
+$background_color_3: #ED502E;
+$border_color_1: #ccc;
+
+.contact-icon-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $background_color_1;
+}
+.contact-icon {
+	text-align: center;
+	p {
+		margin-bottom: 30px;
+		margin-top: 30px;
+		color: $color_1;
+	}
+}
+.icons {
+	i {
+		padding: 50px;
+		border-radius: 50%;
+		color: $color_2;
+		background-color: $background_color_2;
+		border-color: $border_color_1;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		box-shadow: 0 0 0 8px rgba(255,255,255,1);
+		-webkit-transition: background 0.2s, color 0.2s;
+		-moz-transition: background 0.2s, color 0.2s;
+		transition: background 0.2s, color 0.2s;
+		&:hover {
+			background-color: $background_color_3;
+			color: $color_3;
+		}
+	}
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+////contact page icons end/////
 
 {% if site.custom_extensions == 'yes' %}
 {% include _my/custom.scss %}
