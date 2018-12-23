@@ -3,7 +3,7 @@ priority: 0.1
 title: Life is Cool
 excerpt: An example of a and b
 categories: blog
-background-image: flame1.png
+background-image: flame1.jpg
 tags:
   - Life
   - Me
